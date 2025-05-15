@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datos de Jugadores</title>
+</head>
+<body>
+    <h1>Historial de jugadores registrados</h1>
+    <table border="1">
+        <tr><th>Usuario</th><th>Equipo</th><th>País</th><th>Fecha</th></tr>
+        {% for usuario, equipo, pais, fecha in datos %}
+        <tr><td>{{ usuario }}</td><td>{{ equipo }}</td><td>{{ pais }}</td><td>{{ fecha }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
